@@ -1,0 +1,50 @@
+Question 1:
+Hi George, 
+Happy to help you become more comfortable with the search engine world and Algolia as a whole.
+Let’s start with Indexing and Records.
+An Index refers to a data set within Algolia. Indices are created by Indexing, which is how you import, update and format the data you wish to perform search queries against.
+Records are the individual objects in the Index, and show up as results when given a matching search query. 
+For example, if I wanted to build a search engine around restaurant reviews, a Record would refer to a restaurant, including all of it’s attributes like reviews, popularity and open hours. An Index would be a list of multiple restaurants, and I could update the Index as I add more restaurants or more reviews are added, or format the restaurants xxxx.
+Last, Custom Ranking Metrics allow you to put relevance on records that perform well on a specific business metric. Using the restaurant example, a Custom Ranking Metric could be a raw number, like the number of reviews a restaurant has, or even a number that you’ve computed on your end, like a popularity score. Using Custom Ranking Metrics, a restaurant record with a large number of reviews and a high popularity score would appear before others that meet the traditional search criteria.
+I’m happy to get on the phone to discuss individual Custom Ranking Metrics for your specific use case as they are unique to every customer. Please let me know if you need any further clarification on these or any concepts in the onboarding process. 
+
+Best Regards, 
+Angela
+
+
+---
+Question 2:
+Hi Matt, 
+First off, I apologize for the issues you’re having with the new Algolia interface. Secondly, I appreciate you coming to us with product feedback - it’s critical that our product be user friendly and meet the needs of our customers. I’ll make sure to pass along your feedback to the product and design team if there’s an easy way to add this to the top level page.
+In the meantime, I’d highly recommend using one of our API clients for quicker experience managing Indices and more. Please checkout the following articles: 
+ * https://www.algolia.com/doc/api-client/ruby/manage-indices/#delete-an-index
+ * https://www.algolia.com/doc/api-client/ruby/manage-indices/#clear-an-index
+ 
+I hope this was helpful! Please reach out to me if you have any other questions or difficulties using the product.
+Best Regards, 
+Angela
+
+
+---
+Question 3:
+
+Hi Leo, 
+
+We’re excited you are interested in Algolia! Our dashboard allows you to configure your search engine easily without any dev work, and our API clients make it very easy with relatively low dev work. We also provide some great tooling for front end development for implementing the search engine on your website or mobile application.
+
+High level, the process looks like this:
+
+* Push your data to us this will create your Index (dataset) (Manually via our dashboard or using our API client)
+* Configure your search settings to be most relevant to your specific use case (Manually via our dashboard or using our API client)
+* Implement your search engine on your website or mobile application. Check out these front end libraries that make it easy to build a great search UI:
+   * https://community.algolia.com/algoliasearch-helper-js/ (recommended)
+   * https://community.algolia.com/instantsearch.js/
+   * https://community.algolia.com/instantsearch.js/react/
+   * https://github.com/algolia/autocomplete.js
+
+For more details, I recommend checking out this guide https://www.algolia.com/doc/guides/getting-started/how-it-works.
+Let me know if you have any additional questions about the process or if I can explain anything about getting setup with Algolia.
+
+
+Best Regards, 
+Angela
