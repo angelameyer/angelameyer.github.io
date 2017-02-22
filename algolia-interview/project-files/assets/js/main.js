@@ -91,7 +91,7 @@ function renderPaymentList(content) {
     return $.map(content.getFacetValues('payment_options'), function(facet) {
 
       if (facet.name == "Diners Club" || facet.name == "JCB" || facet.name == "Carte Blanche") {
-        return
+        return;
       }
 
       var checkbox = $('<input type=checkbox style="opacity: 0.0; position: absolute; left: -9999px">')
@@ -120,13 +120,13 @@ $('#search-window').on('keyup', function() {
         .search();
 });
 
-helper.search();
+//helper.search();
 
-// navigator.geolocation.watchPosition(function(position) {
-//   helper.setQueryParameter('aroundLatLngViaIP', true).search();
-// },
-// function (error) { 
-//   if (error.code == error.PERMISSION_DENIED)
-//   		// default NYC
-//       helper.setQueryParameter('aroundLatLng', '40.71, -74.01').search();
-// });
+navigator.geolocation.watchPosition(function(position) {
+  helper.setQueryParameter('aroundLatLngViaIP', true).search();
+},
+function (error) { 
+  if (error.code == error.PERMISSION_DENIED)
+  		// default NYC
+      helper.setQueryParameter('aroundLatLng', '40.71, -74.01').search();
+});
