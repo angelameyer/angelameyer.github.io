@@ -88,11 +88,11 @@ $('#payment-list').on('click', 'input[type=checkbox]', function(e) {
 
 function renderPaymentList(content) {
   $('#payment-list').html(function() {
-
     return $.map(content.getFacetValues('payment_options'), function(facet) {
 
-      // if (facet.name == "Diners Club" || facet.name == "JCB" || facet.name == "Carte Blanche") {
-      // }
+      if (facet.name == "Diners Club" || facet.name == "JCB" || facet.name == "Carte Blanche") {
+        return
+      }
 
       var checkbox = $('<input type=checkbox style="opacity: 0.0; position: absolute; left: -9999px">')
         .data('facet', facet.name)
